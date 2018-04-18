@@ -10,7 +10,11 @@ public class Inverti {
 		int numero;
 		System.out.println("Inserisci un numero:");
 		numero=tastiera.nextInt();
-		System.out.println(inverti(parola, numero));
+		if(numero>parola.length()){
+			System.out.println("ERRORE: il numero non puo' essere maggiore della lunghezza della parola!");
+		}
+		else
+			System.out.println(inverti(parola, numero));
 	}
 
 	public static String inverti(String parola,int n){
